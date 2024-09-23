@@ -1,0 +1,25 @@
+{
+  "template": "https://github.com/monarch-initiative/cookiecutter-monarch-ingest.git",
+  "commit": "a76709a1a8983e5d7396535c517133530044e6c8",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "github_org_name": "monarch-initiative",
+      "project_name": "string_modular",
+      "project_description": "String v12 modular ingest",
+      "__repo_name": "string_modular",
+      "__project_slug": "string_modular",
+      "__project_url": "https://github.com/monarch-initiative/string_modular",
+      "ingest_source": "string",
+      "ingest_type": "protein-protein interaction",
+      "__ingest_name": "string_protein-protein interaction",
+      "min_python_version": "3.10",
+      "full_name": "Justin Reese and KG Construction Crew (TM)",
+      "email": "justaddcoffee@gmail.com",
+      "__author": "Justin Reese and KG Construction Crew (TM) <justaddcoffee@gmail.com>",
+      "license": "BSD-3",
+      "_template": "https://github.com/monarch-initiative/cookiecutter-monarch-ingest.git"
+    }
+  },
+  "directory": null
+}

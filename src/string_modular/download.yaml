@@ -1,0 +1,8 @@
+### This file is a YAML configuration that specifies
+### the data to be downloaded and ingested for this project.
+### The configuration is used by `kghub-downloader`.
+### For more information, see https://github.com/monarch-initiative/kghub-downloader
+---
+- url: https://stringdb-downloads.org/download/protein.links.detailed.v12.0/9606.protein.links.detailed.v12.0.txt.gz
+  local_name: data/string/9606.protein_links.txt.gz
+  tag: string_protein_links

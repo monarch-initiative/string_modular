@@ -16,6 +16,13 @@ while (row := koza_app.get_row()) is not None:
         id=f"{row['protein2'].split('.')[1]}",
         name=row["protein2"],
     )
+    # make a list of evidence, e.g.
+    # neighborhood fusion cooccurence coexpression experimental database textmining combined_score
+    # and put it in has_attribute
+    list_of_evidence = []
+    for key in row.keys():
+        list_of_evidence.append(f"{key}:{row[key]}")
+
     association = PairwiseMolecularInteraction(
         id=str(uuid.uuid1()),
         subject=row["protein1"],
@@ -23,8 +30,8 @@ while (row := koza_app.get_row()) is not None:
         object=row["protein2"],
         subject_category="biolink:Protein",
         object_category="biolink:Protein",
-        # category=["biolink:Association"],
         knowledge_level="not_provided",
         agent_type="not_provided",
+        has_attribute=list_of_evidence
     )
     koza_app.write(entity_a, entity_b, association)
